@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('1-clonecode'){
 			steps{
-				sh 'checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'team7', url: 'https://github.com/eric-prosper001/My-work1.git']])'
+				sh 'checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'etechgithub', url: 'https://github.com/eric-prosper001/My-work1.git']])'
 			}
 		}
 		parallel{
